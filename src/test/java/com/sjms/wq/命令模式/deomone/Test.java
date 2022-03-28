@@ -50,8 +50,6 @@ public class Test {
      */
     @org.junit.jupiter.api.Test
     void test_command_mode(){
-        String LightString = "Light";
-        String stereoString = "stereo";
         Light light = new Light();
         Stereo stereo = new Stereo();
         LightOnCommand lightOnCommand = new LightOnCommand(light);
@@ -66,11 +64,19 @@ public class Test {
         System.out.println(remoteControl);
 
         remoteControl.onButtonWasPushed(0);
-        remoteControl.undoButtonWasPushed(0);
+
         remoteControl.offButtonWasPushed(0);
+        remoteControl.undoButtonWasPushed(0);
 
         remoteControl.onButtonWasPushed(1);
         remoteControl.offButtonWasPushed(1);
         System.out.println(remoteControl);
     }
+
+    @org.junit.jupiter.api.Test
+    void test_the_fan(){
+
+
+    }
+
 }

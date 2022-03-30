@@ -4,25 +4,24 @@ import com.sjms.wq.命令模式.demoone.interfaces.Command;
 
 /**
  * @Author: 世墨
- * @Date: 2022/3/28 17:58
+ * @Date: 2022/3/29 20:05
  * @DESCRIPTION
  */
-public class CeilingFanHighCommand implements Command {
-
+public class CeilingFanMediumCommand implements Command {
     CeilingFan ceilingFan;
     //用于存储上一次的速度
     int prevSpeed;
 
-    public CeilingFanHighCommand(CeilingFan ceilingFan) {
+    public CeilingFanMediumCommand(CeilingFan ceilingFan) {
         this.ceilingFan = ceilingFan;
     }
 
+
     @Override
     public void execute() {
-        System.out.println("高转速打开");
-        //获取当前转速 存储
+        System.out.println("中转速打开");
         prevSpeed = ceilingFan.getSpeed();
-        ceilingFan.high();
+        ceilingFan.medium();
     }
 
     @Override

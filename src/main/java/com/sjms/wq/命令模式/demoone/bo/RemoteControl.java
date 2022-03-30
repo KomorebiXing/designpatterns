@@ -43,7 +43,7 @@ public class RemoteControl {
         undoCommand = offCommand[slot];
     }
 
-    public void undoButtonWasPushed(int slot){
+    public void undoButtonWasPushed(){
         System.out.print("撤销动作:现在状态为    ");
         undoCommand.undo();
     }

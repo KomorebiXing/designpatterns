@@ -1,10 +1,10 @@
 package com.sjms.wq.装饰者模式.demoone;
 
-import com.sjms.wq.装饰对象模式.demoone.bo.Beverage;
-import com.sjms.wq.装饰对象模式.demoone.bo.Espresso;
-import com.sjms.wq.装饰对象模式.demoone.bo.Mocha;
-import com.sjms.wq.装饰对象模式.demoone.bo.Whip;
-import com.sjms.wq.装饰对象模式.demotwo.bo.LowerCaseInputStream;
+import com.sjms.wq.结构型.装饰对象模式.demoone.bo.Beverage;
+import com.sjms.wq.结构型.装饰对象模式.demoone.bo.Espresso;
+import com.sjms.wq.结构型.装饰对象模式.demoone.bo.Mocha;
+import com.sjms.wq.结构型.装饰对象模式.demoone.bo.Whip;
+import com.sjms.wq.结构型.装饰对象模式.demotwo.bo.LowerCaseInputStream;
 
 import java.io.BufferedInputStream;
 import java.io.FileInputStream;

@@ -3,6 +3,8 @@ package com.sjms.wq.结构型.享元模式;
 /**
  * <p>
  * 具体享元类
+ *
+ * 测试 {@link com.sjms.wq.结构型.享元模式.Test#test()}
  * </p>
  *
  * @author 世墨
@@ -21,6 +23,35 @@ public class BeautifulWaitress extends AbstractWaitressFlyweight{
         this.id = id;
         this.name = name;
         this.age = age;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    @Override
+    public boolean isCanService() {
+        return canService;
     }
 
 

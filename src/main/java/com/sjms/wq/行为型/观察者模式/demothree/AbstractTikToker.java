@@ -15,6 +15,9 @@ import java.util.List;
  */
 public abstract class AbstractTikToker {
 
+    /**
+     * 观察者的核心就是 这个 列表 遍历 通知干什么事情
+     */
     private List<AbstractFans> abstractFansList =  new ArrayList<>();
 
     /**

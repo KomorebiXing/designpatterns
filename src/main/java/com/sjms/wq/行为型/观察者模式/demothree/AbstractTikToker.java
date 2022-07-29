@@ -15,12 +15,14 @@ import java.util.List;
  */
 public abstract class AbstractTikToker {
 
-    private List<AbstractFans> abstractFans =  new ArrayList<>();
+    private List<AbstractFans> abstractFansList =  new ArrayList<>();
 
     /**
      * 添加粉丝
      */
-    abstract void addFans(AbstractFans abstractFans);
+    void addFans(AbstractFans abstractFans) {
+        this.abstractFansList.add(abstractFans);
+    };
 
     /**
      * 通知粉丝
@@ -28,10 +30,10 @@ public abstract class AbstractTikToker {
     abstract void notifyFans(String msg);
 
     public List<AbstractFans> getAbstractFans() {
-        return abstractFans;
+        return abstractFansList;
     }
 
     public void setAbstractFans(List<AbstractFans> abstractFans) {
-        this.abstractFans = abstractFans;
+        this.abstractFansList = abstractFans;
     }
 }

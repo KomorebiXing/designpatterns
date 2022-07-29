@@ -20,10 +20,6 @@ public class MMTikToker extends AbstractTikToker{
         notifyFans("结束卖货,卖完啦");
     }
 
-    @Override
-    void addFans(AbstractFans abstractFans) {
-        super.getAbstractFans().add(abstractFans);
-    }
 
     @Override
     void notifyFans(String msg) {

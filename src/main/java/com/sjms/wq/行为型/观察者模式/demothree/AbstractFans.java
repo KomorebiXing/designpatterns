@@ -11,5 +11,4 @@ package com.sjms.wq.行为型.观察者模式.demothree;
 public abstract class AbstractFans {
 
    abstract void acceptMsg(String msg);
-
 }

@@ -4,7 +4,7 @@ import java.util.Random;
 
 /**
  * <p>
- *
+ * 测试 {@link  com.sjms.wq.行为型.备忘录模式.Test#test()}
  * </p>
  *
  * @author 世墨

@@ -6,7 +6,9 @@ import java.util.List;
 
 /**
  * <p>
- * 靠他维护链条
+ * 复杂的责任链模式  回调责任链
+ * 1 -> 2 -> 3 -> 目标方法 -> 3 -> 2 -> 1
+ *
  *  测试 {@link  com.sjms.wq.行为型.责任链模式.Test#ext_test()}
  * </p>
  *

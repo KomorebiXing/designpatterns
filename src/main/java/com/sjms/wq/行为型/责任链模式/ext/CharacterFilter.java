@@ -14,10 +14,10 @@ public class CharacterFilter implements Filter {
     public void doFilter(Request request, Response response, FilterChain chain) {
 
         request.msg += "===";
-
         System.out.println("CharacterFilter....doFilter之前");
         //往下放行
         chain.doFilter(request,response,chain);
+        response.content += "===";
         System.out.println("CharacterFilter....doFilter之后");
     }
 }

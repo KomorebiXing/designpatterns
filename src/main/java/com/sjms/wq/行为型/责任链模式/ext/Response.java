@@ -15,11 +15,11 @@ public class Response {
         this.content = content;
     }
 
-    public String getMsg() {
+    public String getContent() {
         return content;
     }
 
-    public void setMsg(String msg) {
-        this.content = msg;
+    public void setContent(String content) {
+        this.content = content;
     }
 }

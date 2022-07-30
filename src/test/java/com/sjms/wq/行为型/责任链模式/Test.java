@@ -4,6 +4,7 @@ import com.sjms.wq.行为型.责任链模式.ext.CharacterFilter;
 import com.sjms.wq.行为型.责任链模式.ext.EncodingFilter;
 import com.sjms.wq.行为型.责任链模式.ext.FilterChain;
 import com.sjms.wq.行为型.责任链模式.ext.HttpFilter;
+import com.sjms.wq.行为型.责任链模式.ext.My;
 import com.sjms.wq.行为型.责任链模式.ext.Request;
 import com.sjms.wq.行为型.责任链模式.ext.Response;
 
@@ -45,9 +46,14 @@ public class Test {
         filterChain.addFilter(httpFilter);
         filterChain.addFilter(encodingFilter);
         filterChain.addFilter(characterFilter);
+        Request request = new Request("123");
+        Response response = new Response("嘿嘿");
+        My my = new My(request, response);
+        filterChain.setTarget(my);
 
 
-        filterChain.doFilter(new Request("123"),new Response("嘿嘿"),filterChain);
+        filterChain.doFilter(my.getRequest(),my.getResponse(),filterChain);
+        my.get();
 
     }
 

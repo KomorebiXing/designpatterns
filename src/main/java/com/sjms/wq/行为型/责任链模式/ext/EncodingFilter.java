@@ -17,6 +17,8 @@ public class EncodingFilter implements Filter{
         System.out.println("EncodingFilter....doFilter之前");
         //往下放行
         chain.doFilter(request,response,chain);
+        response.content += "***";
         System.out.println("EncodingFilter....doFilter之后");
+
     }
 }

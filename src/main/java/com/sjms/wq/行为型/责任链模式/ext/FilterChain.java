@@ -1,11 +1,13 @@
 package com.sjms.wq.行为型.责任链模式.ext;
 
+
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  * <p>
  * 靠他维护链条
+ *  测试 {@link  com.sjms.wq.行为型.责任链模式.Test#ext_test()}
  * </p>
  *
  * @author 世墨
@@ -44,6 +46,8 @@ public class FilterChain implements Filter {
     public void doFilter(Request request, Response response, FilterChain chain) {
         if (cursor != filterList.size()){
             filterList.get(cursor++).doFilter(request,  response,  chain);
+        }else {
+            target.get();
         }
 
     }

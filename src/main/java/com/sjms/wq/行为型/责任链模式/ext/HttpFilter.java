@@ -18,6 +18,7 @@ public class HttpFilter implements Filter{
         System.out.println("HttpFilter....doFilter之前");
         //往下放行
         chain.doFilter(request,response,chain);
+        response.content += "<<<";
         System.out.println("HttpFilter....doFilter之后");
     }
 }

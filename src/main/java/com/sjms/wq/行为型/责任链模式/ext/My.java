@@ -13,8 +13,32 @@ import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
 public class My {
 
 
-    public void get(){
-        System.out.println("你好");
+    private Request request;
+
+    private  Response response;
+
+    public My(Request request, Response response) {
+        this.request = request;
+        this.response = response;
     }
 
+    public void get(){
+        System.out.println("request:"+ request.msg +"你好" +  "response:" + response.content);
+    }
+
+    public Request getRequest() {
+        return request;
+    }
+
+    public void setRequest(Request request) {
+        this.request = request;
+    }
+
+    public Response getResponse() {
+        return response;
+    }
+
+    public void setResponse(Response response) {
+        this.response = response;
+    }
 }

@@ -18,6 +18,7 @@ public class MatchState implements TeamState {
     @Override
     public TeamState next() {
         System.out.println("进入下一个状态");
+        //状态写死 可以优化
         return new VocationState();
     }
 }

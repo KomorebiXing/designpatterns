@@ -20,6 +20,7 @@ public class MeiYanDecorator implements TikTokDecorator{
     public void tiktok() {
         //增强功能
         enableMeiYan();
+        //目标方法
         manTikTok.tiktok();
     }
 
